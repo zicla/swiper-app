@@ -74,6 +74,7 @@ $(function () {
 		if (items.length > 5) {
 			if (index <= 2) {
 				navigationSwiper.slideTo(0, 400, false);
+				
 			} else if (index > 2 && index < items.length - 2) {
 				navigationSwiper.slideTo(index - 2, 400, false);
 			}
