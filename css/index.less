@@ -1,0 +1,105 @@
+html, body {
+	font-family: "微软雅黑", Microsoft YaHei, "Helvetica Neue", Helvetica, Arial, sans-serif, "open sans";
+	font-size: 13px;
+	background-color: #f3f3f4;
+	padding: 0;
+	margin: 0;
+	img {
+		max-width: 100%;
+	}
+}
+
+.carousel {
+	height: 250px;
+
+	.carousel-swiper-container {
+		width: 100%;
+		height: 100%;
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: aliceblue;
+
+		}
+
+	}
+
+}
+
+.navigation {
+	position: relative;
+	border-bottom: 1px solid #eeeeee;
+
+	.navigation-inner {
+		background-color: white;
+
+		.navigation-swiper-container {
+
+			.swiper-wrapper {
+
+				.item-tab {
+					padding: 15px 0;
+					color: #aaaaaa;
+					text-align: center;
+
+					&.active {
+						border-bottom: 2px solid black;
+						color: black;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.plus-btn {
+		padding: 15px;
+		z-index: 10;
+		right: 0;
+		top: 0;
+		position: absolute;
+
+		background: -webkit-linear-gradient(left, transparent, white);
+		background: -o-linear-gradient(right, transparent, white);
+		background: -moz-linear-gradient(right, transparent, white);
+		background: linear-gradient(to right, transparent, white);
+	}
+}
+
+.stage {
+
+	.stage-swiper-container {
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+			//10px是为为了让大家尽量小，真正的高度留给swiper-slide-active去控制。
+			height:10px;
+
+			//高亮页高度自适应。
+			&.swiper-slide-active {
+				height: auto
+			}
+		}
+	}
+
+}
+
+.tab-bar {
+
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #eee;
+	padding: 5px 0;
+	background-color: white;
+
+	text-align: center;
+}
