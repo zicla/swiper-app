@@ -22,23 +22,27 @@ body img {
   font-size: 18px;
   background: aliceblue;
 }
-.navigation {
+.navigation-outer.affix {
+  top: 0;
+  z-index: 5;
+}
+.navigation-outer .navigation {
   position: relative;
   border-bottom: 1px solid #eeeeee;
 }
-.navigation .navigation-inner {
+.navigation-outer .navigation .navigation-inner {
   background-color: white;
 }
-.navigation .navigation-inner .navigation-swiper-container .swiper-wrapper .item-tab {
+.navigation-outer .navigation .navigation-inner .navigation-swiper-container .swiper-wrapper .item-tab {
   padding: 15px 0;
   color: #aaaaaa;
   text-align: center;
 }
-.navigation .navigation-inner .navigation-swiper-container .swiper-wrapper .item-tab.active {
+.navigation-outer .navigation .navigation-inner .navigation-swiper-container .swiper-wrapper .item-tab.active {
   border-bottom: 2px solid black;
   color: black;
 }
-.navigation .plus-btn {
+.navigation-outer .navigation .plus-btn {
   padding: 15px;
   z-index: 10;
   right: 0;

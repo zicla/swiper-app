@@ -86,4 +86,14 @@ $(function () {
 		console.log("你点击了添加按钮");
 	})
 
+
+	/**
+	 * 将tab栏固定在顶部。
+	 */
+	$('.navigation-outer').affix({
+		offset: {
+			//这里的高度应该等于轮播图的高度。
+			top: 240
+		}
+	})
 });

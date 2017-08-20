@@ -27,25 +27,33 @@ html, body {
 
 }
 
-.navigation {
-	position: relative;
-	border-bottom: 1px solid #eeeeee;
+.navigation-outer {
 
-	.navigation-inner {
-		background-color: white;
+	&.affix {
+		top: 0;
+		z-index: 5;
+	}
+	.navigation {
+		position: relative;
+		border-bottom: 1px solid #eeeeee;
 
-		.navigation-swiper-container {
+		.navigation-inner {
+			background-color: white;
 
-			.swiper-wrapper {
+			.navigation-swiper-container {
 
-				.item-tab {
-					padding: 15px 0;
-					color: #aaaaaa;
-					text-align: center;
+				.swiper-wrapper {
 
-					&.active {
-						border-bottom: 2px solid black;
-						color: black;
+					.item-tab {
+						padding: 15px 0;
+						color: #aaaaaa;
+						text-align: center;
+
+						&.active {
+							border-bottom: 2px solid black;
+							color: black;
+						}
+
 					}
 
 				}
@@ -54,20 +62,20 @@ html, body {
 
 		}
 
+		.plus-btn {
+			padding: 15px;
+			z-index: 10;
+			right: 0;
+			top: 0;
+			position: absolute;
+
+			background: -webkit-linear-gradient(left, transparent, white);
+			background: -o-linear-gradient(right, transparent, white);
+			background: -moz-linear-gradient(right, transparent, white);
+			background: linear-gradient(to right, transparent, white);
+		}
 	}
 
-	.plus-btn {
-		padding: 15px;
-		z-index: 10;
-		right: 0;
-		top: 0;
-		position: absolute;
-
-		background: -webkit-linear-gradient(left, transparent, white);
-		background: -o-linear-gradient(right, transparent, white);
-		background: -moz-linear-gradient(right, transparent, white);
-		background: linear-gradient(to right, transparent, white);
-	}
 }
 
 .stage {
@@ -79,7 +87,7 @@ html, body {
 			font-size: 18px;
 			background: #fff;
 			//10px是为为了让大家尽量小，真正的高度留给swiper-slide-active去控制。
-			height:10px;
+			height: 10px;
 
 			//高亮页高度自适应。
 			&.swiper-slide-active {
