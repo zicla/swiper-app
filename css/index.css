@@ -52,7 +52,7 @@ body img {
   background: linear-gradient(to right, transparent, white);
 }
 .stage {
-  padding-bottom: 40px;
+  padding-bottom: 48px;
 }
 .stage .stage-swiper-container .swiper-slide {
   text-align: center;
@@ -79,5 +79,6 @@ body img {
   border-top: 1px solid #eee;
   padding: 5px 0;
   background-color: white;
+  height: 48px;
   text-align: center;
 }

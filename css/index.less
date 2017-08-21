@@ -10,8 +10,12 @@ body {
 	}
 }
 
+@carousel-height: 250px;
+@navigation-height: 50px;
+@tab-bar-height: 48px;
+
 .carousel {
-	height: 250px;
+	height: @carousel-height;
 
 	.carousel-swiper-container {
 		width: 100%;
@@ -81,7 +85,7 @@ body {
 
 .stage {
 	//这个padding值应该和tab-bar一样高。
-	padding-bottom: 40px;
+	padding-bottom: @tab-bar-height;
 
 	.stage-swiper-container {
 
@@ -102,7 +106,7 @@ body {
 
 //相邻兄弟选择器。
 .affix + .stage {
-	margin-top: 50px;
+	margin-top: @navigation-height;
 
 	.stage-swiper-container {
 
@@ -127,6 +131,7 @@ body {
 	border-top: 1px solid #eee;
 	padding: 5px 0;
 	background-color: white;
+	height: @tab-bar-height;
 
 	text-align: center;
 }

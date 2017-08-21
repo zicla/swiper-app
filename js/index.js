@@ -97,7 +97,7 @@ $(function () {
 	$navigationOuter.affix({
 		offset: {
 			//这里的高度应该等于轮播图的高度。
-			top: 240
+			top: 250
 		}
 	});
 
