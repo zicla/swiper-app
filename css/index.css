@@ -63,6 +63,13 @@ body img {
 .stage .stage-swiper-container .swiper-slide.swiper-slide-active {
   height: auto;
 }
+.affix + .stage {
+  margin-top: 50px;
+}
+.affix + .stage .stage-swiper-container .swiper-slide.swiper-slide-active {
+  height: 650px;
+  overflow-y: scroll;
+}
 .tab-bar {
   position: fixed;
   z-index: 1;

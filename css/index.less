@@ -94,11 +94,27 @@ body {
 
 			//高亮页高度自适应。
 			&.swiper-slide-active {
-				height: auto
+				height: auto;
 			}
 		}
 	}
+}
 
+//相邻兄弟选择器。
+.affix + .stage {
+	margin-top: 50px;
+
+	.stage-swiper-container {
+
+		.swiper-slide {
+
+			//高亮页高度自适应。
+			&.swiper-slide-active {
+				height: 650px;
+				overflow-y: scroll;
+			}
+		}
+	}
 }
 
 .tab-bar {

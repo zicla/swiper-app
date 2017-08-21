@@ -74,7 +74,7 @@ $(function () {
 		if (items.length > 5) {
 			if (index <= 2) {
 				navigationSwiper.slideTo(0, 400, false);
-				
+
 			} else if (index > 2 && index < items.length - 2) {
 				navigationSwiper.slideTo(index - 2, 400, false);
 			}
@@ -93,10 +93,27 @@ $(function () {
 	/**
 	 * 将tab栏固定在顶部。
 	 */
-	$('.navigation-outer').affix({
+	var $navigationOuter = $('.navigation-outer');
+	$navigationOuter.affix({
 		offset: {
 			//这里的高度应该等于轮播图的高度。
 			top: 240
 		}
-	})
+	});
+
+	//监听事件
+	$navigationOuter.on("affix.bs.affix", function () {
+		console.log("affix.bs.affix");
+	});
+
+	$navigationOuter.on("affix-top.bs.affix", function () {
+		console.log("affix-top.bs.affix");
+	});
+
+	$navigationOuter.on("affix-bottom.bs.affix", function () {
+		console.log("affix-bottom.bs.affix");
+	});
+
+
+
 });
